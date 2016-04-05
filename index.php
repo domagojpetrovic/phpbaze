@@ -10,7 +10,8 @@
     Automobili
 </h1>
 <p>
-    <?php $sql = "SELECT id, registracija, ime FROM automobili";
+    <?php
+    $sql = "SELECT id, registracija, ime FROM automobili";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -29,6 +30,9 @@
     }
     $conn->close();
     ?>
+</p>
+<p>
+    <a href="unos.php">Unos novog automobila</a>
 </p>
 </body>
 </html>
